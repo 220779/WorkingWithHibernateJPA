@@ -985,7 +985,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="284" parent="276" name="Employee">
+    <table id="284" parent="276" name="Employees">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
@@ -1008,31 +1008,41 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="289" parent="284" name="idEmployee">
+    <column id="289" parent="284" name="EmployeeId">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="290" parent="284" name="first_name">
-      <DataType>varchar(45)|0s</DataType>
+    <column id="290" parent="284" name="firstName">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="291" parent="284" name="last-name">
-      <DataType>varchar(45)|0s</DataType>
+    <column id="291" parent="284" name="lastName">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="292" parent="284" name="departmentId">
-      <DataType>varchar(45)|0s</DataType>
+      <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="293" parent="284" name="PRIMARY">
-      <ColNames>idEmployee
-departmentId</ColNames>
+    <foreign-key id="293" parent="284" name="employees_ibfk_1">
+      <ColNames>departmentId</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>Department</RefTableName>
+    </foreign-key>
+    <index id="294" parent="284" name="PRIMARY">
+      <ColNames>EmployeeId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="294" parent="284" name="PRIMARY">
+    <index id="295" parent="284" name="departmentId">
+      <ColNames>departmentId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="296" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
