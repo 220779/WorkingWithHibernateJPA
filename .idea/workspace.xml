@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b36cecef-02b8-4aea-b4f9-df2fe389f787" name="Changes" comment="[add] Generating Entities from Database Schema">
+    <list default="true" id="b36cecef-02b8-4aea-b4f9-df2fe389f787" name="Changes" comment="[fix] Foreign Key">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a561fd2-f0a0-4b17-ac13-39a4c2ef53f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a561fd2-f0a0-4b17-ac13-39a4c2ef53f2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/DepartmentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/EmployeeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/EmployeeEntityPK.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678613939640</updated>
-      <workItem from="1678613941964" duration="11350000" />
+      <workItem from="1678613941964" duration="15520000" />
     </task>
     <task id="LOCAL-00001" summary="[add] mysql dependencies added">
       <created>1678615151087</created>
@@ -104,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678638279963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[fix] Foreign Key">
+      <created>1678874456904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678874456904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +133,7 @@
     <MESSAGE value="[add] mysql dependencies added" />
     <MESSAGE value="[add] Creating a Data source" />
     <MESSAGE value="[add] Generating Entities from Database Schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] Generating Entities from Database Schema" />
+    <MESSAGE value="[fix] Foreign Key" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] Foreign Key" />
   </component>
 </project>
